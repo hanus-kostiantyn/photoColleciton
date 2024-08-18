@@ -1,70 +1,86 @@
-# Getting Started with Create React App
+# Photo Collection
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a simple photo collection web application built with React. The application allows users to browse through different categories of photos, filter them by name, and navigate through different pages of collections.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- **Category Filtering**: Users can filter photos based on predefined categories (e.g., All, Sea, Mountains, Architecture, Cities).
+- **Search Functionality**: Users can search for photos by name using the search bar.
+- **Pagination**: The application supports pagination, allowing users to browse through multiple pages of photo collections.
+- **Responsive Design**: The app layout is designed to be responsive and user-friendly.
 
-### `npm start`
+## Technologies Used
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **React**: A JavaScript library for building user interfaces.
+- **CSS/SCSS**: Used for styling the components.
+- **MockAPI**: The application fetches data from a mock API to simulate backend functionality.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Getting Started
 
-### `npm test`
+### Prerequisites
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Make sure you have Node.js installed on your local machine.
 
-### `npm run build`
+### Installation
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Clone the repository:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+   ```bash
+   git clone https://github.com/hanus-kostiantyn/photoColleciton.git
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+2. Navigate to the project directory:
 
-### `npm run eject`
+   ```bash
+   cd photoColleciton
+   ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+3. Install the dependencies:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+   ```bash
+   npm install
+   ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+4. Start the development server:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+   ```bash
+   npm start
+   ```
 
-## Learn More
+   The application should now be running on `http://localhost:3000`.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Folder Structure
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- **public/**: Contains the static files such as `index.html`, icons, and the data file (`data.json`).
+- **src/**: Contains the source code of the application.
+  - **App.js**: The main component that manages the state and logic of the app.
+  - **Collection.jsx**: A component responsible for rendering individual photo collections.
+  - **index.js**: The entry point for rendering the React application.
+  - **index.scss**: The main stylesheet for the application.
 
-### Code Splitting
+### Usage
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- **Filter by Category**: Click on any category in the top bar to filter photos by that category.
+- **Search by Name**: Use the search bar to filter photos by their name.
+- **Pagination**: Use the pagination buttons at the bottom to navigate through different pages of photo collections.
 
-### Analyzing the Bundle Size
+### API
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+The application uses a mock API to fetch photo collections. The API endpoint used in this project:
 
-### Making a Progressive Web App
+```
+https://66c1b7fdf83fffcb587a04e7.mockapi.io/photoCollection
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### Contributing
 
-### Advanced Configuration
+If you wish to contribute to this project, feel free to fork the repository and submit a pull request.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### License
 
-### Deployment
+This project is open-source and available under the [MIT License](LICENSE).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+### Acknowledgements
 
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Special thanks to [MockAPI](https://mockapi.io/) for providing the mock backend service.
+```
